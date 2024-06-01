@@ -43,6 +43,15 @@ This project provides a hands-on approach to exploring deep learning for compute
    - New fully connected layers are added on top of the remaining VGG19 layers.
    - These new layers are trained to map the extracted features from VGG19 to the final predictions (age and gender).
 
+**Haar Cascade Classifiers**
+
+Haar cascade classifiers are a type of machine learning algorithm used for real-time object detection in images and videos. They excel at efficiently identifying specific objects within an image, particularly for well-defined shapes like faces. 
+
+In this project, we leverage Haar cascades to perform face detection as the first step in our age and gender prediction pipeline. Here's how it works:
+
+By employing Haar cascades for face detection, we ensure that our age and gender prediction model only focuses on relevant image regions, improving efficiency and 
+accuracy.
+
 3. **Training:**
    - The model is trained on the preprocessed UTKFace dataset.
    - During training, the model learns to adjust the weights and biases in the newly added layers to minimize the prediction error for age and gender.
