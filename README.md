@@ -1,14 +1,16 @@
 
 **Project Title**
 
-Age and Gender Prediction with Deep Learning using UTKFace datasey , VGG19, and Haarcascade
+Age and Gender Prediction with Deep Learning using UTKFace dataset, YOLOv5, and VGG19
 
 **Project Description**
 
 This project implements a deep learning model to predict a person's approximate age and gender from a single image. It utilizes:
 
-- **Haarcascade:** For real-time face detection in the input image.
+- **YOLOv5**: A state-of-the-art real-time object detection model for efficiently identifying faces in the input image. [Yolo-github](https://github.com/ultralytics/yolov5)
+
 - **VGG19:** A pre-trained convolutional neural network (CNN) as a powerful feature extractor.
+
 - **Fine-tuned layers:** Added on top of VGG19 to specialize it for age and gender prediction.
 
 **Why This Project?**
@@ -43,14 +45,9 @@ This project provides a hands-on approach to exploring deep learning for compute
    - New fully connected layers are added on top of the remaining VGG19 layers.
    - These new layers are trained to map the extracted features from VGG19 to the final predictions (age and gender).
 
-**Haar Cascade Classifiers**
+**YOLO for Face Detection**
 
-Haar cascade classifiers are a type of machine learning algorithm used for real-time object detection in images and videos. They excel at efficiently identifying specific objects within an image, particularly for well-defined shapes like faces. 
-
-In this project, we leverage Haar cascades to perform face detection as the first step in our age and gender prediction pipeline. Here's how it works:
-
-By employing Haar cascades for face detection, we ensure that our age and gender prediction model only focuses on relevant image regions, improving efficiency and 
-accuracy.
+You Only Look Once (YOLO) is a powerful family of object detection models known for their speed and accuracy. In this project, we leverage YOLOv5 to identify faces within an image before passing those faces to our age and gender prediction model. This approach streamlines the process by ensuring our model focuses only on relevant image regions containing faces.
 
 3. **Training:**
    - The model is trained on the preprocessed UTKFace dataset.
