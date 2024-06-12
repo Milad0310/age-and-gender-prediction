@@ -1,7 +1,7 @@
 
 **Project Title**
 
-Age and Gender Prediction with Deep Learning using UTKFace dataset, YOLOv5, and VGG19
+Age and Gender Prediction with Deep Learning using UTKFace dataset, YOLOv, and VGG19
 
 **Project Description**
 
@@ -47,7 +47,7 @@ This project provides a hands-on approach to exploring deep learning for compute
 
 **YOLO for Face Detection**
 
-You Only Look Once (YOLO) is a powerful family of object detection models known for their speed and accuracy. In this project, we leverage YOLOv5 to identify faces within an image before passing those faces to our age and gender prediction model. This approach streamlines the process by ensuring our model focuses only on relevant image regions containing faces.
+You Only Look Once (YOLO) is a powerful family of object detection models known for their speed and accuracy. In this project, we leverage YOLO to identify faces within an image before passing those faces to our age and gender prediction model. This approach streamlines the process by ensuring our model focuses only on relevant image regions containing faces.
 
 3. **Training:**
    - The model is trained on the preprocessed UTKFace dataset.
