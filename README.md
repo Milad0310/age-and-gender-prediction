@@ -1,3 +1,5 @@
+![](demo/output.mp4) ![](demo/output(2).mp4)
+
 
 **Project Title**
 
@@ -74,7 +76,7 @@ You Only Look Once (YOLO) is a powerful family of object detection models known 
      - Pre-trained VGG19 model weights.
    - Run the main script (e.g., `python main.py`).
    - The script will:
-     - Load the Haarcascade face detector.
+     - Load the yolo face detector.
      - Load the pre-trained VGG19 model.
      - Load the UTKFace dataset.
      - Train the model (if training is required).
